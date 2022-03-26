@@ -1,12 +1,8 @@
 # Dream XI Fantasy League
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple attempt to make dream XI alike UI where you can choose players from the given options. 
 
+### Go To Live Site (Netlify)
 
-### Go To Live Site
+[https://dream-11-players.netlify.app/]
 
-This section has moved here: [https://dream-11-players.netlify.app/]
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
