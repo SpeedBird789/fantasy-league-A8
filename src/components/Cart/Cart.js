@@ -3,7 +3,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-    const {cart} = props;
+    const {cart,clearCart } = props;
     
     return (
         <div className='cart'>
@@ -14,7 +14,7 @@ const Cart = (props) => {
                     )
             }
             <button className='cart-btn'>Auto Choose</button>
-            <button className='cart-btn'> Reset</button>
+            <button onClick={()=>clearCart()} className='cart-btn'> Reset</button>
         </div>
     );
 };
