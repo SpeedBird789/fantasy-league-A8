@@ -3,3 +3,13 @@
     top: 0;
     padding: 25px 20px;
 }
+
+.cart .cart-btn{
+    background-color:azure;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart .cart-btn:hover{
+    background-color: rgb(245, 177, 52);
+}
