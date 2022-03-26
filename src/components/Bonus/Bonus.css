@@ -1,0 +1,16 @@
+.QnA{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 350px;
+    padding: 0 10px;
+}
+
+/* Mobile Responsive */
+@media  screen and (max-width:667px)  {
+    .QnA{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 150px;
+    }
+}
