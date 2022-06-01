@@ -3,7 +3,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-    const {cart,clearCart } = props;
+    const {cart, randomPick, clearCart} = props;
     
     return (
         <div className='cart'>
@@ -13,8 +13,9 @@ const Cart = (props) => {
                     <h3 key={item.id}>{item.name}</h3>
                     )
             }
-            <button className='cart-btn'>Auto Choose</button>
+            <button onClick={()=>randomPick(cart.length)} className='cart-btn'>Auto Choose</button>
             <button onClick={()=>clearCart()} className='cart-btn'> Reset</button>
+            <h4>You have picked:</h4>
         </div>
     );
 };

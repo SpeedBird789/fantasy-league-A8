@@ -7,6 +7,7 @@ const Shop = () => {
 
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [luckyPlayer, setLuckyPlayer] = useState([]);
 
     useEffect( () => {
         fetch('data.json')
@@ -20,10 +21,17 @@ const Shop = () => {
         setCart(newCart);
     }
 
+    const randomPick=(product)=>{
+      
+        const index = Math.floor(Math.random()*product);
+        setLuckyPlayer(cart[index]);
+        
+       }
+
     const clearCart=()=>{
         setCart([]);
+        setLuckyPlayer([]);
     }
-
 
     return (
         <div className='shop-container'>
@@ -34,7 +42,11 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-                <Cart cart={cart} clearCart={clearCart}></Cart>
+                <Cart cart={cart} clearCart={clearCart} randomPick={randomPick}></Cart>
+                {/* <button onClick={()=>randomPick(cart.length)} className='cart-btn'></button> */}
+                {
+                    <h1 className='lucky-player'>{luckyPlayer.name}</h1>
+                }
             </div>
         </div>
     );

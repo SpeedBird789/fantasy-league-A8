@@ -13,3 +13,9 @@
 .cart .cart-btn:hover{
     background-color: rgb(245, 177, 52);
 }
+
+.lucky-player{
+    position: fixed;
+    padding: 25px 15px;
+    margin-top: -55px;
+}
